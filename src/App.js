@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import {Navbar} from './MyComponents/Navbar'
+import {Home} from './MyComponents/Home.js';
+import {Services} from './MyComponents/Services.js';
+import {Progress} from './MyComponents/Progress.js';
+import {Switch,Route,Redirect} from 'react-router-dom';
 
-function App() {
+export const App = () => {
+  const name="Suhotra";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Switch>
+        <Route exact path="/" component={() =><Home name={name}/>} />
+        <Route exact path="/services" component={Services} />
+        <Route exact path="/progress" component={Progress} />
+        <Redirect to="/" />
+      </Switch>
     </div>
   );
-}
-
-export default App;
+};
