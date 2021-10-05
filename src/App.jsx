@@ -1,10 +1,10 @@
 import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap/dist/js/bootstrap.bundle";
 import {Navbar} from './MyComponents/Navbar'
-import {Home} from './MyComponents/Home.js';
-import {Services} from './MyComponents/Services.js';
-import {Progress} from './MyComponents/Progress.js';
+import {Home} from './MyComponents/Home.jsx';
+import {Services} from './MyComponents/Services.jsx';
+import {Progress} from './MyComponents/Progress.jsx';
 import {Switch,Route,Redirect} from 'react-router-dom';
 
 export const App = () => {

@@ -1,8 +1,26 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Sora', sans-serif;
+}
+.navbar{
+  background: whitesmoke !important;
+}
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+.navbar a {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.menu_active{
+  font-weight: bold !important;
+  border-bottom: 1px solid #565387 !important;
+}
+.navbar a:hover{
+  color: rgb(0, 174, 255)!important;
 }
