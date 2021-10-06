@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const Progress = () => {
     return (
@@ -7,5 +7,5 @@ export const Progress = () => {
                 this is progress page
             </h1>
         </div>
-    )
+    );
 }
