@@ -1,6 +1,6 @@
 import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import {Navbar} from './MyComponents/Navbar'
 import {Home} from './MyComponents/Home.jsx';
 import {Services} from './MyComponents/Services.jsx';
